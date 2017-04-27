@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <title>Sylpauljoyce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "spjAddProducts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class = "forBG">
+<!--
+<img style = "max-width: 100%; height: auto; z-index: -1;position: fixed;" src= "bgtry1.jpg">
+-->
+	<div class = "btnProfile">
+		<button class = "button button3" id = "btnLogout">
+			<span class="glyphicon glyphicon-log-out">
+				<a href = "logout.html">Log Out</a> 
+			</span>
+		</button>
+	</div>
+	
+	<div class = "btns">
+		<button class="button button1">
+			<span class="glyphicon glyphicon-bed">
+				<a href = "spjProducts.html">Products</a> 
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-stats">
+				<a href = "reports.html">Reports</a> 
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-star">
+				<a href = "feedback.html">Feedbacks</a>
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-info-sign">
+				<a href = "tips.html">Tips</a>
+			</span>
+		</button>
+	</div>
+	<div class = "spjTitle">
+		SYLPAULJOYCE
+	</div>
+			<div class = "spjSubTitle">
+				FURNITURE, LIGHTS AND DECOR
+			</div>
+	<div class = "container">
+		<button class="button button2">
+			<a href = "spjHome3.html">
+				<span class="glyphicon glyphicon-home">
+				</span>
+			</a>
+			
+		</button>
+		<div class="relative" style="background-color: #ffffff;">
+		<div class = "AddTitle">
+			ADD SHOWROOM
+		</div>
+			<div class = "formHehe">	
+				<form action = "spjShowroom.html">
+				
+				<div class="col-xs-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+						<input type="text" class="form-control" id="showroomName" placeholder="Showroom Name" required/>
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+					<div class="input-group">
+						Category: 
+						<select id="category">
+							<option value="livingroom" selected="selected">Living Room</option>
+							<option value="bedroom">Bedroom</option>
+							<option value="diningroom">Dining Room</option>
+							<option value="office">office</option>
+							<option value="outdoor">Outdoor</option>
+						</select>	
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-resize-horizontal"></i></span>
+						<input type="text" class="form-control" id = "size" placeholder = "Size" required/>	
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+						<input type="text" class="form-control" id = "products" placeholder = "Products" required/>	
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+				Picture(.png)
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+						<input type="file" class="form-control" id = "picture" required/>	
+						<progress value = "0" max = "100" id = "picuploader">0%</progress>
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+				3D(.fbx)
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+						<input type="file" class="form-control" id = "fbx" required/>	
+						<progress value = "0" max = "100" id = "fbxuploader">0%</progress>
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+						<textarea class="form-control" rows="4" cols="50" id = "desc" placeholder = "Description" required/></textarea>
+					</div>
+				</div>
+
+				<br><br>
+					<div class = "btn">
+						<button id = "Submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			
+			<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+			<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+			<script type="text/javascript" src="showroom.js"></script>
+				
+		</div>
+</div>
+</body>
+</html>

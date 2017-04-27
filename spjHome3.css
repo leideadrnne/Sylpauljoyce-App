@@ -1,0 +1,87 @@
+.spjTitle {
+	font-family: Bebas Neue;
+	font-size: 110px;
+	padding-top: 110px;
+	padding-left: 380px;
+	padding-right: 300px;
+	color: #ffffff;
+	letter-spacing: 10px;
+}
+
+.spjSubTitle {
+	font-family: Montserrat;
+	font-size: 20px;
+	padding-top: 1px;
+	padding-left: 500px;
+	color: #ffffff;
+	letter-spacing: 5px;
+}
+
+.spjContent {
+	font-family: Metropolis;
+	font-size: 20px;
+	padding-left: 400px;
+	padding-right: 350px;
+	color: #ffffff;
+	letter-spacing: 2px;
+
+}
+
+.SPJ {
+	padding-left: 100px;
+}
+
+.glyphicon {
+	color: #ffffff;
+	font-size: 20px;
+
+}
+a {
+	color: #ffffff;
+	font-family: Metropolis;
+	font-size: 20px;
+}
+	
+a:hover {
+	color: #197b30;
+	font-family: Metropolis;
+	font-size: 20px;
+}
+
+.glyphicon:hover {
+	color: #197b30;
+	font-size: 20px;
+}
+
+.button {
+    background-color: #ffcc66;
+    border: none;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: transparent;
+	width: 300px;
+	 
+}
+
+.button1:hover {
+    background-color: #e6ff99;
+    color: #ffa366;
+}
+
+.btns {
+	padding-top: 40px;
+	padding-left: 35px;
+}
+
+.btnProfile {
+	padding-top: 1px;
+	padding-left: 1180px;
+}

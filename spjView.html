@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+  <title>Sylpauljoyce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "spjView.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class = "forBG">
+<!--
+<img style = "max-width: 100%; height: auto; z-index: -1;position: fixed;" src= "bgtry1.jpg">
+-->
+	<div class = "btnProfile">
+		<button class = "button button3" id = "btnLogout">
+			<span class="glyphicon glyphicon-log-out">
+				<a href = "logout.html">Log Out</a> 
+			</span>
+		</button>
+	</div>
+	<div class = "btns">
+		<button class="button button1">
+			<span class="glyphicon glyphicon-bed">
+				<a href = "spjProducts.html">Products</a> 
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-stats">
+				<a href = "reports.html">Reports</a> 
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-star">
+				<a href = "feedback.html">Feedbacks</a>
+			</span>
+		</button>
+		<button class="button button1">
+			<span class="glyphicon glyphicon-info-sign">
+				<a href = "tips.html">Tips</a>
+			</span>
+		</button>
+	</div>
+		<div class = "spjTitle">
+			SYLPAULJOYCE
+		</div>
+			<div class = "spjSubTitle">
+				FURNITURE, LIGHTS AND DECOR
+			</div>
+	<div class = "container">
+			<button class="button button2">
+				<a href = "spjHome3.html"> 
+					<span class="glyphicon glyphicon-home">	
+					</span>
+				</a>
+			</button>
+			<button class="button button2">
+				<a href = "spjAddProducts.html">
+					<span class="glyphicon glyphicon-plus-sign">
+					</span>
+				</a>
+			</button>
+		<div class="relative">
+				<div id = "favProducts">
+				</div>
+		
+			<!-- Trigger the modal with a button -->
+			<button class="button button3" data-toggle="modal" data-target="#myModal"> EDIT </button>
+				<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+					<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title"><center>Edit Product</center></h4>
+								</div>
+									<div class="modal-body">
+											<table style = "width: 100%">
+												<tr>
+													<td><div id = "tblName">Product code:</div></td>
+													<td><input type = "text" id = "code"></td>
+												</tr>
+												<tr>
+													<td>Product name:</td>
+													<td><input type = "text" id = "name"></td>
+												</tr>
+												
+												<tr>
+													<td>Category: </td>
+													<td><select id="category">
+														<option value="livingroom" selected="selected">Living Room</option>
+														<option value="bedroom">Bedroom</option>
+														<option value="diningroom">Dining Room</option>
+														<option value="office">office</option>
+														<option value="outdoor">Outdoor</option>
+													</select>	</td>
+												</tr>
+												<tr>
+													<td>Color: </td>
+													<td><input type="radio" class = "type" name="type" id = "typelocal" value="local"> Local
+													<input type="radio" class = "type" name="type" id = "typeimported" value="imported"> Imported<br>	
+												</tr>
+												<tr>
+												<td>If imported: </td>
+													<td><input type = "text" id = "color"></td>
+												</tr>
+												<tr>
+													<td>Size:</td>
+													<td><input type = "text" id = "size"></td>
+												</tr>
+												<tr>
+													<td>Price:</td>
+													<td><input type = "text" id = "price"></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td><input type="checkbox" id="discountStatus" value="true">Discounted<br></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>If yes: <input type="text" id = "discount" placeholder = "Discount"/></td>
+												</tr>
+												<tr>
+													<td>For app(.png)</td>
+													<td><input type="file" class="form-control" id = "png"/>	
+													<progress value = "0" max = "100" id = "pnguploader">0%</progress></td>
+												</tr>
+												<tr>
+													<td>For web(.html)</td>
+													<td><input type="file" class="form-control" id = "html"/>	
+													<progress value = "0" max = "100" id = "htmluploader">0%</progress></td>
+												</tr>
+												<tr>
+													<td>For web(.fbx)</td>
+													<td><input type="file" class="form-control" id = "fbx"/>	
+													<progress value = "0" max = "100" id = "fbxuploader">0%</progress></td>
+												</tr>
+												<tr>
+													<td>Description: </td>
+													<td><textarea rows="4" cols="50" id = "desc" placeholder = "Enter description here"></textarea></td>
+												</tr>
+												<input type = "hidden" id = "picUrl">
+												<input type = "hidden" id = "htmlUrl">
+											</table>
+										<center><button id = "btnSubmit">Submit</button></center>
+									</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<button id = "btnDelete" class = "button">DELETE</button>
+		</div>
+		
+		<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+		<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+		<script type="text/javascript" src="view.js"></script>
+	</div>
+</div>
+</body>
+ 
+</html>

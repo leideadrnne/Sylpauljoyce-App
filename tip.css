@@ -1,0 +1,111 @@
+.spjTitle {
+	font-family: Bebas Neue;
+	font-size: 100px;
+	padding-top: 50px;
+	padding-left: 380px;
+	padding-right: 300px;
+	color: #197b30;
+	letter-spacing: 15px;
+}
+
+.spjSubTitle {
+	font-family: Montserrat;
+	font-size: 15px;
+	padding-top: 1px;
+	padding-left: 500px;
+	color: #197b30;
+	letter-spacing: 5px;
+}
+
+.forBG {
+	background-color: #ffffff; 
+}
+
+.glyphicon {
+	color: #197b30;
+	font-size: 20px;
+
+}
+a {
+	color: #197b30;
+	font-family: Metropolis;
+	font-size: 20px;
+}
+	
+a:hover {
+	color: #197b30;
+	font-family: Metropolis;
+	font-size: 20px;
+}
+
+.glyphicon:hover {
+	color: #197b30;
+	font-size: 20px;
+}
+
+.button {
+    background-color: #197b30;
+    border: none;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: transparent;
+	width: 300px; 
+}
+
+.button2 {
+    background-color: transparent;
+	width: 50px; 
+}
+
+.button3 {
+    background-color: transparent;
+	width: 200px; 
+}
+
+.button1:hover {
+    background-color: #e6ff99;
+    color: #ffa366;
+}
+
+.btns {
+	padding-top: 1px;
+	padding-left: 35px;
+}
+
+.btnProfile {
+	padding-top: 1px;
+	padding-left: 1180px;
+}
+
+.relative {
+    position: relative;
+    border: 8px solid #197b30;
+	padding: 50px;
+
+}
+
+.container {
+	padding-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+}
+
+#name {
+	font-size: 100px;
+	}
+	
+#btnView {
+	width: 120px;
+    background-color: transparent;
+    border: 5px solid #197b30;
+    padding: 10px 15px;
+}

@@ -1,0 +1,78 @@
+.JKLTitle {
+	padding-top: 50px;
+	padding-left: 220px;
+	padding-bottom: 230px;
+	color: #ffffff;
+	letter-spacing: 10px;
+}
+
+.relative {
+    position: absolute;
+    left: 350px;
+	right: 350px;
+    border: 5px solid #ffffff;
+}
+
+.container {
+	padding-top: 90px;
+}
+
+.JKLLogIn {
+	font-family: Metropolis;
+	font-size: 20px;
+	padding-left: 450px;
+	padding-right: 350px;
+	color: #ffffff;
+	letter-spacing: 2px;
+
+}
+
+.input-group {
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 10px;
+}
+
+#btnLogin {
+	width: 200px;
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    padding: 16px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	font-family: Metropolis;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+#btnSignUp, #btnLogout {
+	width: 200px;
+    background-color: transparent;
+    border: none;
+    padding: 16px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	font-family: Metropolis;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.btn {
+	padding-left: 130px;
+	padding-bottom: 20px;
+	}
+	
+.btnProfile {
+	padding-top: 1px;
+	padding-left: 1180px;
+}
